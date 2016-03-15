@@ -3,3 +3,4 @@
 Independent project course - *Week 3*
 
 **Todo:**
+1. Create repository
