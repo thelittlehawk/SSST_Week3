@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController1: UIViewController {
 
+    @IBOutlet weak var firstNameUILabel: UILabel!
+    
+    @IBOutlet weak var firstNameUITextView: UITextField!
+    
+    @IBOutlet weak var resultUITectField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonClicked(sender: AnyObject) {
+        
+        if let a = firstNameUITextView?.text?.uppercaseString {
+            
+        }
+        
+        let a:String = firstNameUITextView.text!
+
+        resultUITectField.text = a
+    }
 
 }
 
